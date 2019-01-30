@@ -1,5 +1,2 @@
-node_modules/
-screenshots/Thumbs.db
-package-lock.json
-/index.js
-.DS_Store
+demo/node_modules
+node_modules

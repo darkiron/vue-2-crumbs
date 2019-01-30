@@ -1,7 +1,5 @@
-export default {
-  name: 'app-breadcrumbs',
-  template: `
-    <ul
+<template>
+  <ul
       class="breadcrumbs-container"
       :is="container"
       v-if="$router"
@@ -29,7 +27,10 @@ export default {
         </slot>
       </li>
     </ul>
-  `,
+</template>
+<script>
+export default {
+  name: 'app-breadcrumbs',
   props: {
     container: {
       type: String,
@@ -107,9 +108,23 @@ export default {
 
     // Function returns resolved page's breadcrumb property
     getBreadcrumb (route) {
+      let Matchedcomponent
       let breadcrumb
       if (route.hasOwnProperty('meta') && route.meta.hasOwnProperty('breadcrumb')) breadcrumb = route.meta.breadcrumb
+      else {
+        Matchedcomponent = this.$router.getMatchedComponents(route.name)
+        if (Matchedcomponent.length >= 1) {
+          Matchedcomponent = Matchedcomponent.filter(component => {
+            if (component.hasOwnProperty('breadcrumb')) {
+              breadcrumb = component.breadcrumb
+              return component
+            }
+          })
+        }
+      }
 
+      /** resolve breadcrumb object with component aka self */
+      if (typeof breadcrumb === 'function') breadcrumb = breadcrumb.call(this, Matchedcomponent[0])
       return breadcrumb
     },
 
@@ -153,6 +168,7 @@ export default {
   },
   created () {
     // Listen to the change of route breadcrumb object
+    /*
     this.$_vue2Crumbs_eventBUS.$on('breadcrumbChanged', () => {
       const metaBreadcrumb = this.$route.meta.breadcrumb
 
@@ -164,5 +180,7 @@ export default {
       }
       this.$forceUpdate()
     })
+    */
   }
 }
+</script>

@@ -1,0 +1,78 @@
+[
+    {
+        "name": "super car",
+        "image": "https://picsum.photos/200/300/?random",
+        "description": "Lorem ipseum dolores",
+        "price": "1 000 000 $",
+        "category": "cars",
+        "subcategory": "sport-cars",
+        "slug": "an-ferrari"
+
+    },
+    {
+        "name": "super car 01",
+        "image": "https://picsum.photos/200/300/?random",
+        "description": "Lorem ipseum dolores",
+        "price": "1 000 000 $",
+        "category": "cars",
+        "subcategory": "sport-cars",
+        "slug": "an-other-ferrari"
+
+    },
+    {
+        "name": "suv",
+        "image": "https://picsum.photos/200/300/?random",
+        "description": "Lorem ipseum dolores",
+        "price": "500 000 $",
+        "category": "cars",
+        "subcategory": "suv",
+        "slug": "an-mercedes"
+
+    },
+    {
+        "name": "suv 2",
+        "image": "https://picsum.photos/200/300/?random",
+        "description": "Lorem ipseum dolores",
+        "price": "600 000 $",
+        "category": "cars",
+        "subcategory": "suv",
+        "slug": "an-amg"
+
+    },
+    {
+        "name": "razor",
+        "image": "https://picsum.photos/200/300/?random",
+        "description": "Lorem ipseum dolores",
+        "price": "5 $",
+        "category": "beauty",
+        "subcategory": "grooming",
+        "slug": "an-razor"
+    },
+    {
+        "name": "barbe soap",
+        "image": "https://picsum.photos/200/300/?random",
+        "description": "Lorem ipseum dolores",
+        "price": "2 $",
+        "category": "beauty",
+        "subcategory": "grooming",
+        "slug": "an-soap"
+    },
+    {
+        "name": "hair dryer",
+        "image": "https://picsum.photos/200/300/?random",
+        "description": "Lorem ipseum dolores",
+        "price": "15 $",
+        "category": "beauty",
+        "subcategory": "woman",
+        "slug": "an-hair-dryer"
+    },
+    {
+        "name": "hair dryer",
+        "image": "https://picsum.photos/200/300/?random",
+        "description": "Lorem ipseum dolores",
+        "price": "19 $",
+        "category": "beauty",
+        "subcategory": "woman",
+        "slug": "an-hair-dryer-1"
+    }
+]
